@@ -95,7 +95,9 @@ export function BrowSection() {
               </p>
             </div>
             <a
-              href={STUDIO.whatsapp}
+              href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+                'Olá! Tudo bem? Gostaria de avaliar o meu caso. Posso enviar uma foto para avaliação?'
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 rounded-full bg-primary px-8 py-4 text-center text-[0.65rem] uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-secondary-foreground"

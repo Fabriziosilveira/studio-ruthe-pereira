@@ -30,7 +30,9 @@ export default function Page() {
       <SiteFooter />
 
       <a
-        href={STUDIO.whatsapp}
+        href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+          'Olá! Gostaria de agendar um horário. Poderia, por favor, me informar os horários disponíveis?'
+        )}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed right-5 bottom-5 z-40 flex size-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-transform hover:scale-105 md:right-8 md:bottom-8"

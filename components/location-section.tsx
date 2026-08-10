@@ -47,7 +47,9 @@ export function LocationSection() {
                 Abrir no Google Maps
               </a>
               <a
-                href={STUDIO.whatsapp}
+                href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+                  'Olá! Gostaria de agendar um horário. Poderia, por favor, me informar os horários disponíveis?'
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-primary/30 px-8 py-4 text-[0.65rem] uppercase tracking-[0.22em] text-primary transition-colors hover:border-primary hover:bg-secondary"

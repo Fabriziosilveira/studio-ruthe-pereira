@@ -18,7 +18,9 @@ export function SiteFooter() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href={STUDIO.whatsapp}
+              href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+                'Olá! Gostaria de agendar um horário. Poderia, por favor, me informar os horários disponíveis?'
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-[0.65rem] uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-secondary-foreground"

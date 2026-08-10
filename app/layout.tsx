@@ -32,30 +32,12 @@ export const metadata: Metadata = {
     'dermaplaning',
     'Studio Ruthe Pereira',
   ],
-  generator: 'v0.app',
   openGraph: {
     title: 'Studio Ruthe Pereira | Beleza e autoestima em Jundiaí',
     description:
       'Alongamento de cílios, lash lifting, sobrancelhas e estética facial em um ambiente acolhedor no Pq. Res. Eloy Chaves, Jundiaí SP.',
     locale: 'pt_BR',
     type: 'website',
-  },
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
   },
 }
 

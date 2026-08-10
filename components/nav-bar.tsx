@@ -74,7 +74,9 @@ export function NavBar() {
 
         <div className="flex items-center gap-3">
           <a
-            href={STUDIO.whatsapp}
+            href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+              'Olá! Gostaria de agendar um horário. Poderia, por favor, me informar os horários disponíveis?'
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden rounded-full bg-primary px-6 py-3 text-[0.65rem] uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-secondary-foreground sm:inline-flex"
@@ -107,7 +109,9 @@ export function NavBar() {
               </a>
             ))}
             <a
-              href={STUDIO.whatsapp}
+              href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+                'Olá! Gostaria de agendar um horário. Poderia, por favor, me informar os horários disponíveis?'
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-5 rounded-full bg-primary px-6 py-4 text-center text-xs uppercase tracking-[0.22em] text-primary-foreground"

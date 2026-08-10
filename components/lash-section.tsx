@@ -134,10 +134,12 @@ export function LashSection() {
                 </div>
               ))}
               <a
-                href={STUDIO.whatsapp}
+                href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+                  'Olá! Gostaria de agendar minha manutenção. Quais horários estão disponíveis?'
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-primary px-8 py-4 text-center text-[0.65rem] uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-secondary-foreground sm:col-span-2"
+                className="flex items-center justify-center rounded-full bg-primary px-8 py-4 text-center text-[0.65rem] uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-secondary-foreground sm:col-span-2"
               >
                 Agendar minha manutenção
               </a>

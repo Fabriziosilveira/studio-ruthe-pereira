@@ -32,7 +32,9 @@ export function Hero() {
 
           <Reveal delay={240} className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href={STUDIO.whatsapp}
+              href={`${STUDIO.whatsapp}?text=${encodeURIComponent(
+                'Olá! Gostaria de agendar um horário. Poderia, por favor, me informar os horários disponíveis?'
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-xs uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-secondary-foreground"

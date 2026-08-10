@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import { CATALOG_PAGES } from '@/lib/studioDataConstants'
-import { Reveal } from '@/components/reveal'
 import {
   Carousel,
   CarouselContent,
@@ -10,26 +9,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { SectionHeading } from './section-heading'
 
 export function CatalogGallery() {
   return (
     <section className="py-20 bg-secondary/60">
       <div className="container mx-auto px-5 md:px-10">
-        <div className="flex items-end justify-between gap-6">
-          <div>
-            <Reveal>
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
-                Catálogo
-              </p>
-            </Reveal>
-
-            <Reveal>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-                Todos os detalhes de cada procedimento
-              </h2>
-            </Reveal>
-          </div>
-        </div>
+        <SectionHeading
+          eyebrow="Nosso trabalho"
+          title="Detalhes que fazem a diferença"
+          description="Conheça alguns dos procedimentos realizados no studio e veja de perto o cuidado em cada detalhe."
+        />
 
         <div className="relative mt-12 px-1">
           <Carousel
