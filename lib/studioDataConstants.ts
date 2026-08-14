@@ -16,21 +16,27 @@ export type LashService = {
   name: string
   price: string
   description: string
+  src: string
+  alt: string
   tag: 'Clássico' | 'Volume' | 'Natural'
 }
 
 export const LASH_SERVICES: LashService[] = [
   {
-    name: 'Fio a fio clássico',
+    name: 'Fio a fio clássico preto',
     price: '160,00',
     tag: 'Clássico',
+    src:'/lashServices/classico-preto.png',
+    alt: '',
     description:
       'Técnica para quem gosta de naturalidade. Alonga com elegância e pode entregar um pouco de volume dependendo da quantidade de fios naturais.',
   },
   {
-    name: 'Clássico marrom',
+    name: 'Fio a fio clássico marrom',
     price: '160,00',
     tag: 'Clássico',
+    src:'/lashServices/classico-marrom.png',
+    alt: '',
     description:
       'Ideal para quem deseja realçar o olhar de forma elegante e extremamente natural. O fio a fio marrom entrega leveza e sutileza.',
   },
@@ -38,6 +44,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Efeito molhado',
     price: '160,00',
     tag: 'Clássico',
+    src:'/lashServices/IMG_0435.jpg',
+    alt: '',
     description:
       'Fios spikes que imitam o aspecto dos cílios molhados, trazendo definição e um olhar marcante. Para quem gosta de um efeito moderno e alinhado.',
   },
@@ -45,6 +53,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Volume brasileiro',
     price: '180,00',
     tag: 'Volume',
+    src:'/lashServices/volume-brasileiro.png',
+    alt: '',
     description:
       'Combina leve volume e definição, com efeito mais preenchido sem perder a naturalidade. Elegante e confortável no dia a dia.',
   },
@@ -52,6 +62,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Volume egípcio',
     price: '180,00',
     tag: 'Volume',
+    src:'/lashServices/volume-egipcio.png',
+    alt: '',
     description:
       'Aplicação de fios leves e de base mais fina que criam mais volume e destaque, mantendo o olhar sem peso. Preenchimento sofisticado.',
   },
@@ -59,6 +71,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Volume inglês',
     price: '180,00',
     tag: 'Volume',
+    src:'/lashServices/volume-ingles.png',
+    alt: '',
     description:
       'Fio de base única com 4 pontas, entregando volume, leveza e intensidade. Ideal para quem gosta de um olhar mais marcante.',
   },
@@ -66,6 +80,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Volume árabe',
     price: '180,00',
     tag: 'Volume',
+    src:'/lashServices/volume-arabe.png',
+    alt: '',
     description:
       'Fio tecnológico de 5 pontas, com resultado bem preenchido e glamouroso. Para quem quer chamar atenção apenas com um olhar poderoso.',
   },
@@ -73,6 +89,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Efeito fox',
     price: '180,00',
     tag: 'Volume',
+    src:'/lashServices/efeito-fox.png',
+    alt: '',
     description:
       'Fios tecnológicos com curvaturas especiais, do brasileiro ao árabe. Ideal para quem gosta do efeito delineado e de cílios de tamanho menor.',
   },
@@ -80,6 +98,8 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Lash lifting',
     price: '140,00',
     tag: 'Natural',
+    src:'/lashServices/lash-lifting.png',
+    alt: '',
     description:
       'Procedimento feito nos cílios naturais para deixá-los mais curvados, alinhados e com aparência de mais alongados, sem extensão de cílios.',
   },
@@ -90,6 +110,8 @@ export const BROW_SERVICES = [
     name: 'Design personalizado',
     price: '60,00',
     highlight: 'Mapeamento + simetrização',
+    src:'/browServices/design-personalizado.jpeg',
+    alt: '',
     description:
       'Antes de remover qualquer pelo é realizado o mapeamento facial e a simetrização, com desenho minucioso respeitando o formato natural. Feito com linha e pinça, finalizado com cromoterapia.',
   },
@@ -97,6 +119,8 @@ export const BROW_SERVICES = [
     name: 'Design + henna',
     price: '85,00',
     highlight: 'Preenchimento e definição',
+    src:'/browServices/design-henna.png',
+    alt: '',
     description:
       'Todo o processo do design personalizado com aplicação de henna na tonalidade e intensidade desejadas, garantindo mais preenchimento.',
   },
@@ -104,13 +128,17 @@ export const BROW_SERVICES = [
     name: 'Design + coloração',
     price: '95,00',
     highlight: 'Fios uniformes',
+    src:'/browServices/design-coloracao.png',
+    alt: '',
     description:
       'Design completo com coloração dos fios, deixando as sobrancelhas uniformes e alinhadas ao seu gosto de tonalidade.',
   },
   {
     name: 'Brow lamination',
-    price: '105,00',
+    price: '165,00',
     highlight: 'Design + coloração opcional',
+    src:'/browServices/brow-lamination.png',
+    alt: '',
     description:
       'Procedimento químico que alinha, reorganiza e direciona os fios, com efeito mais preenchido, definido e harmonioso. Corrige fios desalinhados e cria simetria.',
   },
@@ -121,6 +149,8 @@ export const FACIAL_SERVICES = [
     name: 'Epilação facial na linha',
     price: '60,00',
     duration: '30 a 40 minutos',
+    src:'/facialServices/epilacao.png',
+    alt: '',
     description:
       'Técnica de remoção de pelos que utiliza um fio específico para retirar os pelos desde a raiz, garantindo mais precisão e definição no contorno do rosto. Finalizamos com alta frequência e protetor solar.',
     benefits: [
@@ -135,6 +165,8 @@ export const FACIAL_SERVICES = [
     name: 'Dermaplaning',
     price: '90,00',
     duration: 'Indolor, sem tempo de recuperação',
+    src:'/facialServices/dermaplaning.png',
+    alt: '',
     description:
       'Esfoliação física realizada com lâmina específica e esterilizada, que remove as células mortas e os pelos finos da face. O resultado é uma pele mais lisa, iluminada e com toque aveludado imediatamente após a sessão.',
     benefits: [

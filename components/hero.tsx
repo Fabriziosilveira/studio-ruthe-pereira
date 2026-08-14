@@ -11,7 +11,7 @@ export function Hero() {
           <Reveal className="flex items-center gap-3">
             <span className="h-px w-10 bg-gold" aria-hidden="true" />
             <span className="text-[0.65rem] uppercase tracking-[0.4em] text-primary">
-              Cílios · Sobrancelhas · Estética facial
+              Cílios · Sobrancelhas
             </span>
           </Reveal>
 
@@ -24,8 +24,8 @@ export function Hero() {
 
           <Reveal delay={160}>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-pretty text-muted-foreground">
-              Studio de beleza em Jundiaí especializado em alongamento de cílios, lash lifting,
-              design de sobrancelhas e estética facial. Cada atendimento é pensado para entregar
+              Studio Ruthe Pereira especializado em alongamento de cílios, lash lifting e
+              design de sobrancelhas. Cada atendimento é pensado para entregar
               leveza, autoestima e um momento de bem-estar.
             </p>
           </Reveal>

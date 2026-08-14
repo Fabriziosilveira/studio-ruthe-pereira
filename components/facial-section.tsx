@@ -2,6 +2,7 @@ import { Clock, Sparkles } from 'lucide-react'
 import { CONTRAINDICATIONS, FACIAL_SERVICES } from '@/lib/studioDataConstants'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
+import { StudioImage } from './crop-image'
 
 export function FacialSection() {
   return (
@@ -9,7 +10,7 @@ export function FacialSection() {
       <div className="w-full min-w-0 mx-auto max-w-7xl px-5 md:px-10">
         <SectionHeading
           eyebrow="Pele"
-          title="Estética facial: epilação na linha e dermaplaning"
+          title="Epilação na linha e dermaplaning"
           description="Procedimentos que trabalham textura, luminosidade e definição do contorno do rosto — sempre finalizados com alta frequência e protetor solar."
         />
 
@@ -18,7 +19,7 @@ export function FacialSection() {
             <Reveal
               key={service.name}
               delay={index * 90}
-              className="flex min-w-0 max-w-full flex-col overflow-hidden rounded-t-[3.5rem] rounded-b-2xl border border-border bg-card p-5 sm:p-8 md:p-10"
+              className="group h-full flex min-w-0 max-w-full flex-col overflow-hidden rounded-t-[3.5rem] rounded-b-2xl border border-border bg-card p-5 sm:p-8 md:p-10"
             >
               <div className="min-w-0">
                 <h3 className="min-w-0 max-w-full break-words font-serif text-3xl leading-tight font-light tracking-display text-foreground md:text-4xl">
@@ -29,9 +30,15 @@ export function FacialSection() {
                 </p>
               </div>
 
-              <p className="mt-6 text-sm leading-relaxed text-pretty text-muted-foreground">
+              <p className="mt-6 mb-5 text-sm leading-relaxed text-pretty text-muted-foreground">
                 {service.description}
               </p>
+
+              <StudioImage
+                src={service.src}
+                alt={service.alt}
+                className="aspect-[4/5] rounded-t-[3rem] rounded-b-xl border-2 border-border border-primary/30"
+              />
 
               <p className="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
                 <Clock className="size-4 text-gold" />

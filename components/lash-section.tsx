@@ -6,6 +6,7 @@ import { LASH_SERVICES, MAINTENANCE, STUDIO } from '@/lib/studioDataConstants'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 import { cn } from '@/lib/utils'
+import { StudioImage } from './crop-image'
 
 const FILTERS = ['Todos', 'Clássico', 'Volume', 'Natural'] as const
 
@@ -45,12 +46,12 @@ export function LashSection() {
           ))}
         </Reveal>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <Reveal
               key={service.name}
               delay={index * 60}
-              className="group flex flex-col justify-between rounded-t-[3rem] rounded-b-2xl border border-border bg-card p-8 transition-colors hover:border-gold/60"
+              className="group h-full flex flex-col justify-between rounded-t-[3rem] rounded-b-2xl border border-border bg-card p-8 transition-colors hover:border-gold/60"
             >
               <div>
                 <span className="text-[0.6rem] uppercase tracking-[0.28em] text-gold">
@@ -59,11 +60,16 @@ export function LashSection() {
                 <h3 className="mt-4 font-serif text-3xl leading-tight font-light tracking-display text-foreground">
                   {service.name}
                 </h3>
-                <p className="mt-4 text-sm leading-relaxed text-pretty text-muted-foreground">
+                <p className="mt-4 mb-5 text-sm leading-relaxed text-pretty text-muted-foreground">
                   {service.description}
                 </p>
+                <StudioImage
+                  src={service.src}
+                  alt={service.alt}
+                  className="aspect-[4/5] rounded-t-[3rem] rounded-b-xl border-2 border-border border-primary/30"
+                />
               </div>
-              <div className="mt-8 flex items-end justify-between border-t border-border/70 pt-6">
+              <div className="mt-5 flex items-end justify-between border-t border-border/70 pt-6">
                 <span className="text-[0.6rem] uppercase tracking-[0.28em] text-muted-foreground">
                   Aplicação
                 </span>
