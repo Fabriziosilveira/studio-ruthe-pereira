@@ -44,7 +44,7 @@ export const LASH_SERVICES: LashService[] = [
     name: 'Efeito molhado',
     price: '160,00',
     tag: 'Clássico',
-    src:'/lashServices/IMG_0435.jpg',
+    src:'/lashServices/IMG_1990.JPG.jpeg',
     alt: '',
     description:
       'Fios spikes que imitam o aspecto dos cílios molhados, trazendo definição e um olhar marcante. Para quem gosta de um efeito moderno e alinhado.',
