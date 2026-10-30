@@ -24,7 +24,7 @@ export type LashService = {
 export const LASH_SERVICES: LashService[] = [
   {
     name: 'Fio a fio clássico preto',
-    price: '160,00',
+    price: '170,00',
     tag: 'Clássico',
     src:'/lashServices/classico-preto.png',
     alt: '',
@@ -33,7 +33,7 @@ export const LASH_SERVICES: LashService[] = [
   },
   {
     name: 'Fio a fio clássico marrom',
-    price: '160,00',
+    price: '170,00',
     tag: 'Clássico',
     src:'/lashServices/classico-marrom.png',
     alt: '',
@@ -96,7 +96,7 @@ export const LASH_SERVICES: LashService[] = [
   },
   {
     name: 'Lash lifting',
-    price: '140,00',
+    price: '150,00',
     tag: 'Natural',
     src:'/lashServices/lash-lifting.png',
     alt: '',
@@ -135,7 +135,7 @@ export const BROW_SERVICES = [
   },
   {
     name: 'Brow lamination',
-    price: '165,00',
+    price: '170,00',
     highlight: 'Design + coloração opcional',
     src:'/browServices/brow-lamination.png',
     alt: '',
@@ -147,7 +147,7 @@ export const BROW_SERVICES = [
 export const FACIAL_SERVICES = [
   {
     name: 'Epilação facial na linha',
-    price: '60,00',
+    price: '70,00',
     duration: '30 a 40 minutos',
     src:'/facialServices/epilacao.png',
     alt: '',
@@ -194,18 +194,18 @@ export const MICROPIGMENTATION = {
 export const MAINTENANCE = [
   {
     group: 'Fio a fio clássico e efeito molhado',
-    first: 'R$ 160,00 à vista ou R$ 170,00 em até 2x',
+    first: 'R$ 170,00 à vista ou R$ 180,00 em até 2x',
     retouch: [
-      { label: '15 dias', value: 'R$ 90,00' },
-      { label: 'Até 25 dias', value: 'R$ 110,00' },
+      { label: '15 dias', value: 'R$ 100,00' },
+      { label: 'Até 21 dias', value: 'R$ 120,00' },
     ],
   },
   {
     group: 'Volume brasileiro, egípcio, inglês, árabe e fox',
     first: 'R$ 180,00 à vista ou R$ 190,00 em até 2x',
     retouch: [
-      { label: 'Até 15 dias', value: 'R$ 100,00' },
-      { label: 'Até 25 dias', value: 'R$ 130,00' },
+      { label: 'Até 15 dias', value: 'R$ 110,00' },
+      { label: 'Até 21 dias', value: 'R$ 130,00' },
     ],
   },
 ]
