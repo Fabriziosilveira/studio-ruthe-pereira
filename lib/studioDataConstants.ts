@@ -42,7 +42,7 @@ export const LASH_SERVICES: LashService[] = [
   },
   {
     name: 'Efeito molhado',
-    price: '160,00',
+    price: '170,00',
     tag: 'Clássico',
     src:'/lashServices/IMG_1990.JPG.jpeg',
     alt: '',
